@@ -13,36 +13,16 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "playerType": 1,
+      "playerType": 2,
       "header": {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+        "Referer": "https://api.wsyzy.net/",
+        "Accept": "application/json, */*",
+        "Accept-Language": "zh-CN,zh;q=0.9",
+        "Connection": "keep-alive"
       },
       "ext": {
-        "cate": {
-          "电影": "1",
-          "电视剧": "2",
-          "综艺": "3",
-          "动漫": "4",
-          "动作片": "6",
-          "喜剧片": "7",
-          "爱情片": "8",
-          "科幻片": "9",
-          "恐怖片": "10",
-          "剧情片": "11",
-          "战争片": "12",
-          "国产剧": "13",
-          "欧美剧": "14",
-          "韩剧": "15",
-          "日剧": "16",
-          "港剧": "17",
-          "台剧": "18",
-          "泰剧": "19",
-          "纪录片": "20",
-          "大陆综艺": "25",
-          "日韩综艺": "26",
-          "港台综艺": "27"
-        },
-        "playUrl": "play_url",
+        "playUrl": "vod_play_url",
         "vodName": "vod_name",
         "vodId": "vod_id",
         "typeId": "type_id",
@@ -53,20 +33,20 @@
         "vodDirector": "vod_director",
         "vodContent": "vod_content",
         "vodYear": "vod_year",
-        "playFrom": "vod_play_from"
+        "playFrom": "vod_play_from",
+        "playNote": "vod_play_note"
       }
     }
   ],
-  "lives": [
-    {
-      "name": "直播频道",
-      "type": 0,
-      "url": "https://raw.githubusercontent.com/yoursmile66/TVBox/main/live.txt",
-      "playerType": 1,
-      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-    }
-  ],
   "flags": ["wsym3u8"],
+  "http": {
+    "wsym3u8": {
+      "header": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+        "Referer": "https://api.wsyzy.net/"
+      }
+    }
+  },
   "ijk": [
     {
       "name": "默认解码",
