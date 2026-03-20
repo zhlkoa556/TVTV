@@ -1,44 +1,77 @@
 {
+  "name": "我的专属TVBox源",
+  "url": "https://github.com/yoursmile66/TVBox",
+  "author": "自定义",
+  "logo": "https://picsum.photos/200/200",
+  "desc": "基于MacCMS接口定制的TVBox专属源",
   "sites": [
     {
-      "key": "wsyzy",
-      "name": "我的资源站",
+      "key": "wsyzy_custom_vod",
+      "name": "专属影视库",
       "type": 3,
       "api": "https://api.wsyzy.net/api.php/provide/vod/",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "categories": [
-        {"id": "1", "name": "电影"},
-        {"id": "2", "name": "电视剧"},
-        {"id": "3", "name": "综艺"},
-        {"id": "4", "name": "动漫"},
-        {"id": "6", "name": "动作片"},
-        {"id": "7", "name": "喜剧片"},
-        {"id": "8", "name": "爱情片"},
-        {"id": "9", "name": "科幻片"},
-        {"id": "10", "name": "恐怖片"},
-        {"id": "11", "name": "剧情片"},
-        {"id": "13", "name": "国产剧"},
-        {"id": "14", "name": "欧美剧"},
-        {"id": "15", "name": "韩剧"},
-        {"id": "16", "name": "日剧"},
-        {"id": "17", "name": "港剧"},
-        {"id": "25", "name": "大陆综艺"},
-        {"id": "26", "name": "日韩综艺"},
-        {"id": "27", "name": "港台综艺"},
-        {"id": "54", "name": "爽文短剧"}
-      ]
+      "playerType": 1,
+      "header": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+      },
+      "ext": {
+        "cate": {
+          "电影": "1",
+          "电视剧": "2",
+          "综艺": "3",
+          "动漫": "4",
+          "动作片": "6",
+          "喜剧片": "7",
+          "爱情片": "8",
+          "科幻片": "9",
+          "恐怖片": "10",
+          "剧情片": "11",
+          "战争片": "12",
+          "国产剧": "13",
+          "欧美剧": "14",
+          "韩剧": "15",
+          "日剧": "16",
+          "港剧": "17",
+          "台剧": "18",
+          "泰剧": "19",
+          "纪录片": "20",
+          "大陆综艺": "25",
+          "日韩综艺": "26",
+          "港台综艺": "27"
+        },
+        "playUrl": "play_url",
+        "vodName": "vod_name",
+        "vodId": "vod_id",
+        "typeId": "type_id",
+        "typeName": "type_name",
+        "vodPic": "vod_pic",
+        "vodRemarks": "vod_remarks",
+        "vodActor": "vod_actor",
+        "vodDirector": "vod_director",
+        "vodContent": "vod_content",
+        "vodYear": "vod_year",
+        "playFrom": "vod_play_from"
+      }
     }
   ],
-  "parses": [
+  "lives": [
     {
-      "name": "专用解析",
+      "name": "直播频道",
       "type": 0,
-      "url": "https://wsyzy.top/m3u8/?url="
+      "url": "https://raw.githubusercontent.com/yoursmile66/TVBox/main/live.txt",
+      "playerType": 1,
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
     }
   ],
-  "lives": [],
-  "ads": [],
-  "wallpaper": "https://picsum.photos/1920/1080"
+  "flags": ["wsym3u8"],
+  "ijk": [
+    {
+      "name": "默认解码",
+      "type": 0,
+      "url": ""
+    }
+  ]
 }
